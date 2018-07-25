@@ -13,6 +13,7 @@ CREATE TABLE USUARIO(
 CREATE TABLE CONTA(
 	numero integer,
 	agencia integer,
+	senha varchar(255),
 	titular varchar(11),
 	saldo integer,
 	primary key(numero),
