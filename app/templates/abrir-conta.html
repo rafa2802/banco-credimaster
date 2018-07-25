@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Banco CrediMaster - Abertura de Conta</title>
+
+  <!-- Bootstrap -->
+  <link href="/static/css/bootstrap.css" rel="stylesheet">
+  <link href="/static/css/abertura-de-conta.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="logo">
+      			<img src="/static/imagens/logo.jpg">
+      		</div>
+      		<div class="formulario">
+			<form class="form-horizontal" method="POST">
+			  <div class="form-group">
+			    <label for="nome-completo" class="col-sm-2 control-label">Nome Completo</label>
+			    <div class="col-sm-10">
+			      <input type="text" class="form-control" id="nome-completo" name="nome" placeholder="Ex: Antônio Carlos da Silva" required>
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label for="cpf" class="col-sm-2 control-label">CPF</label>
+			    <div class="col-sm-10">
+			      <input name="cpf" type="text" class="form-control" id="cpf" placeholder="123.456.789-00" required>
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label for="telefone" class="col-sm-2 control-label">Telefone</label>
+			    <div class="col-sm-10">
+			      <input name="telefone" type="text" class="form-control" id="telefone" placeholder="(00) 00000-0000" required>
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label for="email" class="col-sm-2 control-label">E-mail</label>
+			    <div class="col-sm-10">
+			      <input name="email" type="email" class="form-control" id="email" placeholder="credimaster@credimaster.com">
+			    </div>
+			  </div>
+			  <div class="sexo">
+			  Sexo: 
+				<input name="sexo" type="radio" name="sexo" value="m" id="masculino">
+				<label for="masculino">Masculino</label>
+				<input name="sexo" type="radio" name="sexo" value="f" id="feminino">
+				<label for="feminino">Feminino</label>
+			</div>
+			<div class="form-group">
+			    <label for="idade" class="col-sm-2 control-label">Idade</label>
+			    <div class="col-sm-10">
+			      <input name="idade" type="text" class="form-control" id="idade" required>
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label for="senha" class="col-sm-2 control-label">Senha</label>
+			    <div class="col-sm-10">
+			      <input name="senha" type="password" class="form-control" id="senha" required>
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label for="senha-c" class="col-sm-2 control-label">Confirmar Senha</label>
+			    <div class="col-sm-10">
+			      <input name="senha-c" type="password" class="form-control" id="senha-c" required>
+			    </div>
+			  </div>
+			  <div class="form-group btn-enviar">
+			    <div class="col-sm-offset-2 col-sm-10">
+			      <button type="submit" class="btn btn-primary">Enviar Dados</button>
+			    </div>
+			  </div>
+			</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

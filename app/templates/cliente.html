@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Banco CrediMaster - Área do Cliente</title>
+
+    <!-- Bootstrap -->
+    <link href="/static/css/bootstrap.css" rel="stylesheet">
+    <link href="/static/css/css.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="topo">
+        	<nav class="navbar navbar-default">
+  			<div class="container-fluid">
+          		<div class="logo">
+          			<img src="/static/imagens/logo.jpg">
+          		</div>
+          		<form class="navbar-form navbar-left">
+			  		<div class="form-group">
+			  			<p class="navbar-text">Bem vindo(a), </p>
+			   			<p class="navbar-text">{{ titular[0][0] }}</p>
+              <p><a href="/sair">Sair</a></p>
+			  		</div>
+				</form>
+			</div>
+			</nav>  
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="linha"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="col-md-12">
+        <p>Saldo: R$ {{conta[0][3]}}</p>
+        <p><a href="/transferencia">Transferência</a></p>
+        <p><a href="/saque">Saque</a></p>
+        <p><a href="/deposito">Depósito</a></p>
+      </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
